@@ -4,4 +4,6 @@
   --link: #61dafb;
   --text: hsla(0, 0%, 100%, 0.88);
 }
-
+.body {
+  background-image: 'https://www.hollywoodreporter.com/wp-content/uploads/2018/04/1_seaport_penthouse_credit_to_williams_new_york-h_2018.jpg?w=1296';
+}

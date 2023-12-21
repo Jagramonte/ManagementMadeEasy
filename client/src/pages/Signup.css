@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.title{
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    margin-right: 30%;
+    padding: 50%;
+    font-family: Calibri;
+ 
+}
+

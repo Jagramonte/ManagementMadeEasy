@@ -1,6 +1,7 @@
 import { Container } from "@mui/material"
 import React, {useState, useEffect} from "react"
 import { PropertiesCard } from "./PropertiesCard"
+import styles from './Property.module.css'
 
 
 
@@ -20,7 +21,7 @@ export function Properties() {
 
     return (
         <>
-            <Container maxWidth='lg' >
+            <Container maxWidth='lg' className={styles.cardcomponent}>
                 {properties.map(property => <PropertiesCard key={property.id} properties={property}/>)}
             </Container>
         

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react"
 import { Container } from "@mui/material"
 import { OwnersCard } from "./OwnersCard"
+import styles from './Owner.module.css'
 
 export function Owners() {
 
@@ -19,7 +20,7 @@ export function Owners() {
 
    return (
     <>
-      <Container maxWidth='lg'>
+      <Container maxWidth='lg'className={styles.cardcomponent}>
          {owners.map( owner => <OwnersCard key = {owner.id} owners = {owner} />)}
       </Container>
     </>

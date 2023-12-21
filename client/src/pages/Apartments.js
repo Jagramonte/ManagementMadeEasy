@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react"
 import { Container } from "@mui/material"
 import { ApartmentsCard } from "./ApartmentsCard"
 import { useOutletContext } from "react-router-dom"
+import styles from './Apartment.module.css'
 
 
 export function Apartments () {
@@ -21,7 +22,7 @@ export function Apartments () {
    
     return (
         <>
-        <Container maxWidth='sm'>
+        <Container maxWidth='sm'className={styles.cardcomponent}>
          {apartments.map( apartment => <ApartmentsCard key = {apartment.id} setSelectedApartment={setSelectedApartment} apartment = {apartment} />)}
          </Container>
     

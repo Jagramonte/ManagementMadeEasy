@@ -1,5 +1,6 @@
 import { Card , Button} from "@mui/material";
 import { useNavigate,useOutletContext } from "react-router-dom";
+import styles from './Apartment.module.css'
 
 
 
@@ -19,7 +20,8 @@ export function ApartmentsCard (props) {
 
 
     return (
-        <Card key={id}>
+       <div>
+        <Card key={id} className={styles.apartmentcard} >
             <div>
                 <p>Tenant Name : {tenant_name}</p>
                 <p>Apartment# : {apt_name}</p>
@@ -27,9 +29,8 @@ export function ApartmentsCard (props) {
                 <p>Lease End : {lease_end}</p>
                 <Button onClick={handleAddTenant}>Add Tenant</Button>
                 <Button onClick={handleViewTenantInfo}>Tenant Info</Button>
-                <Button >Delete Apartment</Button>
             </div>
-
         </Card>
+       </div> 
     )
 }

@@ -68,10 +68,13 @@ export function Signup( ) {
     // console.log(formik.values)
     return (
 
-        <Container maxwidth='sm'>
+        <Container maxwidth='sm'className='container'>
 
+            <div className='title'>
+                <h3> Management Starts With MME</h3>
+            </div>
             <Button onClick = {toggleSignup}>{signup ? 'Login instead' : 'Register for an account'}</Button>
-            <form onSubmit={formik.handleSubmit}>
+            <form onSubmit={formik.handleSubmit} className='form'>
                 <TextField 
                     id="username" 
                     label="Username" 

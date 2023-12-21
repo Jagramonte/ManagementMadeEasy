@@ -4,6 +4,7 @@ import { TenantForm } from "./TenantForm";
 import { UpdateTenantForm } from "./UpdateTenantForm";
 import { useNavigate } from "react-router-dom";
 import { useOutletContext } from "react-router-dom";
+import styles from './Tenants.module.css'
 
 export function TenantsCard(props) {
 //   const { id, name, contact_info, apartmentId} = props.tenants;
@@ -40,7 +41,7 @@ export function TenantsCard(props) {
   };
 
   return (
-    <Card key={props.tenant.id}>
+    <Card key={props.tenant.id} className={styles.tenantcard}>
       <div>
         <p>Tenant Name: {props.tenant.name}</p>
         <p>Contact Info: {props.tenant.contact_info}</p>

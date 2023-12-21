@@ -48,7 +48,7 @@ function App() {
 
     <Container >
 
-      <Home />
+      {/* <Home /> */}
       <Outlet context = {context}/>
 
     </Container>

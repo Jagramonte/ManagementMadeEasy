@@ -2,6 +2,7 @@ import { Container } from "@mui/material"
 import React, {useState, useEffect} from "react"
 import {TenantsCard} from './TenantsCard'
 import { useOutlet, useOutletContext } from "react-router-dom"
+import styles from './Tenants.module.css'
 
 
 export function Tenants() {
@@ -20,7 +21,7 @@ export function Tenants() {
    },[])
    return(
       <>
-         <Container maxWidth='lg' >
+         <Container maxWidth='lg' className={styles.cardcomponent}>
             {tenants.map( tenant => <TenantsCard key={tenant.id} tenant={tenant}/>)}
          </Container>
       </>

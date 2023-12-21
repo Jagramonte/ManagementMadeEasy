@@ -23,6 +23,7 @@ import React from "react";
 import { Card, Button } from "@mui/material";
 import { useHistory } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import styles from './Owner.module.css'
 
 export function OwnersCard(props) {
     const { id, name, contact_info } = props.owners;
@@ -33,8 +34,8 @@ export function OwnersCard(props) {
     };
 
     return (
-        <Card key={id}>
-            <div>
+        <Card key={id} className={styles.ownerscard}>
+            <div className="ownercard">
                 <p>Owner Name: {name}</p>
                 <p>Owner Contact Info: {contact_info}</p>
                 <Button onClick={handleViewProperties}>Properties</Button>

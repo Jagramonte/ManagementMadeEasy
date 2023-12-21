@@ -23,6 +23,7 @@ export function UpdateTenantForm({  onUpdate, apartmentId}) {
     {method : 'PATCH', 
     body : JSON.stringify({name, contact_info:contactInfo}),
       headers: {"Content-Type" : 'application/json'}})
+    navigate('/tenants')
   }
 
   return (
